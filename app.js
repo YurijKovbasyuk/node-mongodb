@@ -3,7 +3,7 @@ const express = require('express')
 const cors = require('cors')
 // const dotenv = require('dotenv')
 require('dotenv').config()
-const logger = require('morgan')
+// const logger = require('morgan')
 
 const booksRouter = require('./routes/api/books.js')
 
@@ -11,9 +11,9 @@ const booksRouter = require('./routes/api/books.js')
 
 const app = express()
 
-const formatsLogger = app.get('env') === 'development' ? 'dev' : 'short'
+// const formatsLogger = app.get('env') === 'development' ? 'dev' : 'short'
 
-app.use(logger(formatsLogger))
+// app.use(logger(formatsLogger))
 app.use(cors())
 
 app.use(express.json())

@@ -18,7 +18,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "start:dev": "nodemon index"
+    "start:dev": "nodemon server"
   },
   "dependencies": {
     "bson-objectid": "^2.0.4",

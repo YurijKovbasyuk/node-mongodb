@@ -9,12 +9,12 @@ const router = express.Router()
 
 router.get('/', ctrl.getAll)
 
-router.get('/:id', ctrl.getById)
+// router.get('/:id', ctrl.getById)
 
-router.post('/', validateBody(shemas.addShema), ctrl.add)
+// router.post('/', validateBody(shemas.addShema), ctrl.add)
 
-router.put('/:id', validateBody(shemas.addShema), ctrl.updateById)
+// router.put('/:id', validateBody(shemas.addShema), ctrl.updateById)
 
-router.delete('/:id', ctrl.deleteById)
+// router.delete('/:id', ctrl.deleteById)
 
 module.exports = router
