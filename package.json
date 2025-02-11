@@ -1,0 +1,39 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/YurijKovbasyuk/node-mongodb#readme",
+  "bugs": {
+    "url": "https://github.com/YurijKovbasyuk/node-mongodb/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YurijKovbasyuk/node-mongodb.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start:dev": "nodemon index"
+  },
+  "dependencies": {
+    "bson-objectid": "^2.0.4",
+    "commander": "^13.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "moment": "^2.30.1",
+    "mongoose": "^8.10.0",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.3.4",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
