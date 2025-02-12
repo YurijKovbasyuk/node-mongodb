@@ -1,4 +1,4 @@
-const { HttpError } = require("../hlepers")
+const { HttpError } = require("../helpers")
 
 // декоратор
 const validateBody = shema => {
