@@ -4,7 +4,9 @@ const { HttpError, ctrlWrapper } = require('../helpers/index.js')
 
 const getAll = async (req, res, next) => {
     const { _id: owner } = req.user
-    const result = await Book.find({}, '-createdAt -updatedAt').populate('owner', 'name email')
+    const { page = 1, limit = 10 } = req.query
+    const skip = (page - 1) * limit
+    const result = await Book.find({}, '-createdAt -updatedAt', { skip, limit }).populate('owner', 'name email')
     res.json(result)
 }
 
