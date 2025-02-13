@@ -44,15 +44,6 @@ const login = async (req, res) => {
 
     const token = jwt.sign(payload, SECRET_KEY, { expiresIn: '10h' })
 
-
-    // try {
-    //     const { id } = jwt.verify(token, SECRET_KEY)
-    //     const invalidToken = 'dfv'
-    //     const result = jwt.verify(invalidToken, SECRET_KEY)
-    // } catch (error) {
-    //     console.log(error.message)
-    // }
-
     res.json({
         token,
     })

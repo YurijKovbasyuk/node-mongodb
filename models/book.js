@@ -29,6 +29,11 @@ const bookSchema = new Schema({
         // 14-10-2025
         match: dateRegexp,
         required: true,
+    },
+    owner: {
+        type: Schema.Types.ObjectId,
+        ref: 'user',
+        required: true,
     }
 }, { versionKey: false, timestamps: true })
 
