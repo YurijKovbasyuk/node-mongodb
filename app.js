@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 require('dotenv').config()
 
+const authRouter = require('./routes/api/auth')
 const booksRouter = require('./routes/api/books.js')
 
 const app = express()
@@ -10,10 +11,7 @@ app.use(cors())
 
 app.use(express.json())
 
-app.get('/', (req, res) => {
-    res.send('home page')
-})
-
+app.use('/api/auth/', authRouter)
 app.use('/api/books/', booksRouter)
 
 app.use((req, res) => {
